@@ -2,13 +2,12 @@ export interface Movie {
   Title: string;
   Year: string;
   imdbID: string;
-  Type: string;
   Poster: string;
+  Type: string;
 }
 
-export interface ApiSearchResponse {
+export interface ApiResponse {
   Search: Movie[];
-  totalResult: string;
+  totalSearch: string;
   Response: string;
-  Error?: string;
 }
