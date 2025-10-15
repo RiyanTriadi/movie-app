@@ -1,13 +1,15 @@
-export interface Movie {
-  Title: string;
-  Year: string;
-  imdbID: string;
-  Poster: string;
-  Type: string;
+export interface TMDbMovie {
+  id: number;
+  title: string;
+  overview: string;
+  poster_path: string; 
+  release_date: string;
+  vote_average: number;
 }
 
-export interface ApiResponse {
-  Search: Movie[];
-  totalSearch: string;
-  Response: string;
+export interface TMDbApiResponse {
+  page: number;
+  results: TMDbMovie[]; 
+  total_pages: number;
+  total_results: number;
 }
