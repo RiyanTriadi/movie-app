@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import ProfilePage from "./pages/ProfilePage";
-import ContactPage from "./pages/ContactPage";
+import GenrePage from "./pages/GenrePage";
+import AboutPage from "./pages/AboutPage";
+import ReleasePage from "./pages/ReleasePage";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/genre" element={<GenrePage />} />
+        <Route path="/release" element={<ReleasePage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </div>
   );

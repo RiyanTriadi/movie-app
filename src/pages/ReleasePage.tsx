@@ -1,7 +1,7 @@
 const ContactPage = () => {
   return (
     <div className="alert alert-success" role="alert">
-      <h1>This is Contact Page</h1>
+      <h1>This is Release Page</h1>
     </div>
   );
 };
