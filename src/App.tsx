@@ -1,12 +1,20 @@
-import MovieList from "./components/MovieList"
+import Navbar from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import CategoryPage from "./pages/CategoryPage";
+import BrowsePage from "./pages/BrowsePage";
 
 function App() {
   return (
     <>
-      <h1 className='text-center text-4xl font-bold'>Movie App</h1>
-      <MovieList />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/category" element={<CategoryPage/>}/>
+        <Route path="/browse" element={<BrowsePage/>}/>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

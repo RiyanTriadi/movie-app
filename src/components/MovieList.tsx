@@ -18,7 +18,7 @@ const MovieList = () => {
         }
 
         const data: TMDbApiResponse = await response.json();
-        setMovies(data.results.slice(0, 10));
+        setMovies(data.results.slice(0, 20));
       } catch (err: any) {
         setError(err.message);
       } finally {
@@ -58,6 +58,7 @@ const MovieList = () => {
             />
             <h3>{movie.title}</h3>
             <p>Rilis: {movie.release_date}</p>
+            <p>Score: {movie.vote_average}</p>
           </div>
         ))}
       </div>
