@@ -1,7 +1,7 @@
 # 🎬 Movie App
 
 **Movie App** adalah personal project yang saya kembangkan untuk memudahkan pengguna dalam mencari dan menemukan film sesuai keinginan mereka.  
-Aplikasi ini menampilkan daftar film yang sedang tren, rekomendasi film pilihan, serta fitur **Random Pick Movies** yang memungkinkan pengguna mendapatkan film secara acak — dengan opsi untuk mengacak ulang sesuai selera mereka.
+Aplikasi ini menampilkan daftar film yang sedang tren, rekomendasi film pilihan, serta fitur **Random Pick Movies** yang memungkinkan pengguna mendapatkan film secara acak — dengan opsi untuk mengacak ulang sesuai selera.
 
 ---
 
@@ -36,4 +36,4 @@ Proyek ini saya buat sebagai sarana pembelajaran dan eksplorasi dalam pengembang
 
 ---
 
-> Dibuat dengan ❤️ oleh [Riyan Triadi](https://github.com/RiyanTriadi)
+> Dibuat dengan oleh [Riyan Triadi](https://github.com/RiyanTriadi)
