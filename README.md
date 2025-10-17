@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Movie App** adalah personal project yang saya kembangkan untuk memudahkan pengguna dalam mencari dan menemukan film sesuai keinginan mereka.  
+Aplikasi ini menampilkan daftar film yang sedang tren, rekomendasi film pilihan, serta fitur **Random Pick Movies** yang memungkinkan pengguna mendapatkan film secara acak — dengan opsi untuk mengacak ulang sesuai selera mereka.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Fitur Utama
 
-## React Compiler
+- 🔍 **Home Page** – Menampilkan film populer dan rekomendasi pilihan.  
+- 🎭 **Category Page** – Menyediakan kategori film untuk eksplorasi berdasarkan genre atau tema.  
+- 🎞️ **Browse Movie Page** – Fitur pencarian film berdasarkan judul, genre, atau kata kunci.  
+- 🎲 **Random Pick Movies** – Fitur unik yang menampilkan daftar film acak dengan tombol **"Refresh"** untuk menampilkan pilihan baru.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧠 Teknologi yang Digunakan
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** Vite + TypeScript + Tailwind CSS  
+- **API:** [TMDB (The Movie Database)](https://www.themoviedb.org/documentation/api)  
+- **Tools:** ESLint, Vite Config  
+- **Deployment:** *(Opsional – tambahkan jika sudah di-deploy, misalnya Vercel atau Netlify)*
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📌 Tujuan Proyek
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Proyek ini saya buat sebagai sarana pembelajaran dan eksplorasi dalam pengembangan web modern, khususnya dalam hal **UI/UX design**, **API integration**, dan **frontend performance optimization**.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📷 Tampilan Aplikasi
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🏠 Home Page  
+![Home Preview](./Home.png)
+
+---
+
+> Dibuat dengan ❤️ oleh [Riyan Triadi](https://github.com/RiyanTriadi)
