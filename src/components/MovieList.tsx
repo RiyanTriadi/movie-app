@@ -19,7 +19,7 @@ const MovieList = () => {
         }
 
         const data: TMDbApiResponse = await response.json();
-        setMovies(data.results.slice(0, 20));
+        setMovies(data.results.slice(0, 10));
       } catch (err: any) {
         setError(err.message);
       } finally {
@@ -39,8 +39,8 @@ const MovieList = () => {
 
   return (
     <div>
-      <h1>10 Film Terpopuler Saat Ini</h1>
-      <div className="flex flex-wrap gap-5">
+      <h1 className="text-4xl font-bold pb-4">10 Film Terpopuler Saat Ini</h1>
+      <div className="grid grid-flow-row grid-cols-5 gap-6">
         {movies.map((movie)=>(<MovieCard key={movie.id} movie={movie}/>))}
       </div>
     </div>

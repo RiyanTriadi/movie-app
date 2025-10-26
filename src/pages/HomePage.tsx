@@ -3,7 +3,7 @@ import MovieList from "../components/MovieList";
 const HomePage = () => {
   return (
     <>
-      <div className="pt-20">
+      <div className="w-[1200px] m-auto pt-20">
         <MovieList />
       </div>
     </>

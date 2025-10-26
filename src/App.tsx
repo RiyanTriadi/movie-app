@@ -6,7 +6,7 @@ import BrowsePage from "./pages/BrowsePage";
 
 function App() {
   return (
-    <div className="">
+    <div className="bg-[#262626] text-white">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage/>}/>
