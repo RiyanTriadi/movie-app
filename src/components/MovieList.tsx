@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TMDbApiResponse, TMDbMovie } from "../types.tsx";
+import MovieCard from "./MovieCard.tsx";
 
 const MovieList = () => {
   const [movies, setMovies] = useState<TMDbMovie[]>([]);
@@ -29,38 +30,18 @@ const MovieList = () => {
   }, []);
 
   if (isLoading) {
-    return <div>Sedang memuat...</div>;
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div>Terjadi kesalahan: {error}</div>;
+    return <div>An error occurred: {error}</div>;
   }
-
-  const imageBaseUrl = "https://image.tmdb.org/t/p/w500";
 
   return (
     <div>
       <h1>10 Film Terpopuler Saat Ini</h1>
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
-        {movies.map((movie) => (
-          <div
-            key={movie.id}
-            style={{
-              border: "1px solid #ccc",
-              padding: "10px",
-              width: "200px",
-            }}
-          >
-            <img
-              src={`${imageBaseUrl}${movie.poster_path}`}
-              alt={movie.title}
-              style={{ width: "100%" }}
-            />
-            <h3>{movie.title}</h3>
-            <p>Rilis: {movie.release_date}</p>
-            <p>Score: {movie.vote_average}</p>
-          </div>
-        ))}
+      <div className="flex flex-wrap gap-5">
+        {movies.map((movie)=>(<MovieCard key={movie.id} movie={movie}/>))}
       </div>
     </div>
   );

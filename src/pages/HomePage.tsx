@@ -1,9 +1,13 @@
-import MovieList from "../components/MovieList"
+import MovieList from "../components/MovieList";
 
 const HomePage = () => {
   return (
-    <MovieList/>
-  )
-}
+    <>
+      <div className="pt-20">
+        <MovieList />
+      </div>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;

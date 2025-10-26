@@ -6,14 +6,14 @@ import BrowsePage from "./pages/BrowsePage";
 
 function App() {
   return (
-    <>
+    <div className="">
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/category" element={<CategoryPage/>}/>
         <Route path="/browse" element={<BrowsePage/>}/>
       </Routes>
-    </>
+    </div>
   );
 }
 
