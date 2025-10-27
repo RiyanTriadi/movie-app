@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
-      <header className="fixed z-[99] w-screen text-white bg-black py-4">
-        <div className="w-[90%] lg:w-[1200] mx-auto flex justify-between items-center">
+      <header className="fixed z-[99] w-full text-white bg-black py-4">
+        <div className="w-[90%]  max-w-[1200px] mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold">
             <Link to="/">Movie App</Link>{" "}
           </div>
