@@ -39,7 +39,7 @@ const TrendList = () => {
 
   return (
     <div>
-      <h1 className="text-2xl md:text-4xl font-bold pb-4">Trending Movies</h1>
+      <h1 className="text-2xl md:text-3xl font-bold pb-4">Trending Movies</h1>
       {/* 
         - grid-cols-3: 3 kolom di layar terkecil (mobile).
         - sm:grid-cols-4: 4 kolom di layar 'small' (tablet portrait).
