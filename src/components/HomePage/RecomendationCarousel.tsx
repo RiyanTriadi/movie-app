@@ -48,9 +48,9 @@ const RecomendationCarousel = () => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="w-full relative overflow-hidden">
+    <div className="w-full relative overflow-hidden rounded-[10px]">
       <div
-        className="flex transition-transform duration-500 ease-in-out"
+        className="flex transition-transform duration-500 ease-in-out "
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {movies.map((movie) => (
